@@ -1,5 +1,98 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+baseURL: "https://zotko.github.io"
+title: "Mykola Zotko"
+pagination:
+  pagerSize: 5
+theme: "PaperMod"
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: "About"
+          url: "about"
+          weight: 5
+        - name: "Projects"
+          url: "projects"
+          weight: 10
+
+  de:
+    languageName: "Deutsch"
+    languageCode: "de-de"
+    weight: 2
+    taxonomies:
+      category: DEcategories
+      tag: DEtags
+      series: DEseries
+    menu:
+      main:
+        - name: "Über"
+          url: "about"
+          weight: 5
+        - name: "Projekte"
+          url: "projects"
+          weight: 10
+    params:
+      profileMode:
+        subtitle: "Data Scientist & ML Engineer, in der Nähe von Frankfurt am Main, Deutschland"
+
+params:
+  env: production
+  description: "Personal website of Mykola Zotko"
+  author: "Mykola Zotko"
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  profileMode:
+    enabled: true
+    subtitle: "Data Scientist & ML Engineer based near Frankfurt am Main, Germany"
+    imageUrl: "/img/author.jpg"
+    imageWidth: 180
+    imageHeight: 180
+
+  socialIcons:
+    - name: "stackoverflow"
+      url: "https://stackoverflow.com/users/8973620/mykola-zotko"
+    - name: "github"
+      url: "https://github.com/zotko"
+    - name: "kaggle"
+      url: "https://kaggle.com/mykolazotko"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/zotko"
+    - name: "email"
+      url: "mailto:dev.zotko@outlook.de"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+minify:
+  disableXML: true
+  minifyOutput: false
