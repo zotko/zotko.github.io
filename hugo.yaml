@@ -48,14 +48,31 @@ languages:
           weight: 10
     params:
       profileMode:
-        subtitle: "Data Scientist & ML Engineer, in der Nähe von Frankfurt am Main, Deutschland"
+        enabled: true
+        title: "Mykola Zotko"
+        subtitle: |
+          **Data Scientist** in der Nähe von Frankfurt am Main, Deutschland.  
+          Haben Sie ein spannendes Projekt, bei dem ich unterstützen kann? Ich freue mich darauf, von Ihnen zu hören!
+        imageTitle: "Mykola Zotko"
+        imageUrl: "/img/author.jpg"
+        imageWidth: 180
+        imageHeight: 180
+        buttons:
+          - name: "📧 Kontakt"
+            url: "mailto:dev.zotko@outlook.de"
+          - name: "☕ Kaffee spendieren"
+            url: "https://www.buymeacoffee.com/mykola_zotko"
+          - name: "🇺🇦 Unterstütze die Ukraine"
+            url: "https://stand-with-ukraine.pp.ua"
+
+
 
 params:
   env: production
   description: "Personal website of Mykola Zotko"
   author: "Mykola Zotko"
   defaultTheme: auto
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -63,10 +80,24 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: "Data Scientist & ML Engineer based near Frankfurt am Main, Germany"
+    title: "Mykola Zotko"
+    subtitle: |
+      **Data Scientist** based near Frankfurt am Main, Germany.
+
+      Got an exciting project? Let’s make it happen – I’d love to hear from you!
+
+    imageTitle: "Mykola Zotko"
     imageUrl: "/img/author.jpg"
     imageWidth: 180
     imageHeight: 180
+    buttons:
+      - name: "📧 Get in Touch"
+        url: "mailto:dev.zotko@outlook.de"
+      - name: "☕ Buy Me a Coffee"
+        url: "https://www.buymeacoffee.com/mykola_zotko"
+      - name: "🇺🇦 Support Ukraine"
+        url: "https://stand-with-ukraine.pp.ua"
+
 
   socialIcons:
     - name: "stackoverflow"
@@ -77,8 +108,6 @@ params:
       url: "https://kaggle.com/mykolazotko"
     - name: "linkedin"
       url: "https://linkedin.com/in/zotko"
-    - name: "email"
-      url: "mailto:dev.zotko@outlook.de"
 
 outputs:
   home:
