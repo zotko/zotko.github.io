@@ -9,7 +9,7 @@ enableRobotsTXT: true
 enableEmoji: true
 pygmentsUseClasses: true
 
-defaultContentLanguage: en
+defaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 
 languages:
